@@ -11,9 +11,10 @@
         echo "
             <script>
                 alert('Data berhasil dihapus');
-                document.location.href = 'index.php';
             </script>
         ";
+        header("Location: index.php");
+        exit;
     }
 
     if ( isset($_POST['edit']) ){
